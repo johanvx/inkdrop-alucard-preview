@@ -25,15 +25,16 @@ or go to `Preferences > Plugins > Install` and search for `alucard-preview`.
 
 | colour name | value | 
 | ----------- | ----- |
-| background | #f8f8f2 |
-| foreground | #282a36 |
-| selection | #e4e7fa |
-| comment | #9eaee0 |
-| red | #ee4444 |
-| orange | #eea75b |
-| green | #1cc647 |
-| blue | #5555ff |
-| purple | #956bd1 |
-| cyan | #6dcbdf |
-| pink | #e55fac |
-| white | #ffffff |
+| background | #F8F8F2 |
+| foreground | #282A36 |
+| selection | #E4E7FA |
+| comment | #9EAEE0 |
+| red | #EE4444 |
+| orange | #EEA75B |
+| green | #1CC647 |
+| blue | #5555FF |
+| purple | #956BD1 |
+| cyan | #6DCBDF |
+| pink | #E55FAC |
+| white | #FFFFFF |
+| black | #000000 |
