@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "theme": "preview",
   "scripts": {
-    "build": "lessc styles/less/alucard-markdown.less ./styles/alucard-markdown.css && lessc styles/less/alucard-markdown-dark.less ./styles/alucard-markdown-dark.css"
+    "build": "lessc styles/less/alucard-markdown.less ./styles/alucard-markdown.css"
   },
   "repository": "https://github.com/johanvx/inkdrop-alucard-preview",
   "license": "MIT",
