@@ -5,7 +5,8 @@
 .mde-preview {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  color: #333;
+  background-color: #f8f8f2;
+  color: #282a36;
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.6;
   word-wrap: break-word;
@@ -19,6 +20,9 @@
   clear: both;
   content: "";
 }
+.mde-preview ::marker {
+  color: #6dcbdf;
+}
 .mde-preview a {
   background-color: transparent;
 }
@@ -28,10 +32,10 @@
 }
 .mde-preview strong {
   font-weight: bold;
-  color: black;
+  color: #eea75b;
 }
 .mde-preview em {
-  color: black;
+  color: #5555ff;
 }
 .mde-preview h1 {
   font-size: 2em;
@@ -83,7 +87,7 @@
   font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .mde-preview a {
-  color: #4078c0;
+  color: #e55fac;
   text-decoration: none;
 }
 .mde-preview a:hover,
@@ -96,7 +100,7 @@
   overflow: hidden;
   background: transparent;
   border: 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #9eaee0;
 }
 .mde-preview hr:before {
   display: table;
@@ -117,6 +121,7 @@
   padding-top: 15px;
   margin-bottom: 15px;
   line-height: 1.1;
+  color: #956bd1;
 }
 .mde-preview h1 {
   font-size: 30px;
@@ -208,7 +213,7 @@
 .mde-preview h4 .octicon-link,
 .mde-preview h5 .octicon-link,
 .mde-preview h6 .octicon-link {
-  color: #000;
+  color: #956bd1;
   vertical-align: middle;
   visibility: hidden;
 }
@@ -232,7 +237,7 @@
   padding-bottom: 0.3em;
   font-size: 2.25em;
   line-height: 1.2;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #9eaee0;
 }
 .mde-preview h1 .anchor {
   line-height: 1;
@@ -241,7 +246,7 @@
   padding-bottom: 0.3em;
   font-size: 1.75em;
   line-height: 1.225;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #9eaee0;
 }
 .mde-preview h2 .anchor {
   line-height: 1;
@@ -267,7 +272,6 @@
 }
 .mde-preview h6 {
   font-size: 1em;
-  color: #777;
 }
 .mde-preview h6 .anchor {
   line-height: 1.1;
@@ -283,10 +287,10 @@
   margin-bottom: 16px;
 }
 .mde-preview hr {
-  height: 4px;
+  height: 2px;
   padding: 0;
   margin: 16px 0;
-  background-color: #e7e7e7;
+  background-color: #9eaee0;
   border: 0 none;
 }
 .mde-preview ul,
@@ -319,8 +323,9 @@
 }
 .mde-preview blockquote {
   padding: 0 15px;
-  color: #777;
-  border-left: 4px solid #ddd;
+  color: #5555ff;
+  font-style: italic;
+  border-left: 2px solid #9eaee0;
 }
 .mde-preview blockquote > :first-child {
   margin-top: 0;
@@ -336,23 +341,24 @@
 }
 .mde-preview table th {
   font-weight: bold;
+  background-color: #e4e7fa;
 }
 .mde-preview table th,
 .mde-preview table td {
   padding: 6px 13px;
-  border: 1px solid #ddd;
+  border: 1px solid #9eaee0;
 }
 .mde-preview table tr {
-  background-color: #fff;
-  border-top: 1px solid #ccc;
+  background-color: #f8f8f2;
+  border-top: 1px solid #9eaee0;
 }
 .mde-preview table tr:nth-child(2n) {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
 }
 .mde-preview img {
   max-width: 100%;
   box-sizing: content-box;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .mde-preview code {
   padding: 0;
@@ -360,13 +366,20 @@
   padding-bottom: 0.2em;
   margin: 0;
   font-size: 85%;
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: #f8f8f2;
+  color: #1cc647;
   border-radius: 3px;
 }
 .mde-preview code:before,
 .mde-preview code:after {
+  color: #9eaee0;
   letter-spacing: -0.2em;
-  content: "\00a0";
+}
+.mde-preview code:before {
+  content: "\00a0`";
+}
+.mde-preview code:after {
+  content: "`\00a0";
 }
 .mde-preview pre > code {
   padding: 0;
@@ -383,7 +396,7 @@
   word-wrap: normal;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   border-radius: 3px;
 }
 .mde-preview pre code {
@@ -395,43 +408,35 @@
   line-height: inherit;
   word-wrap: normal;
   background-color: transparent;
+  color: #282a36;
   border: 0;
 }
 .mde-preview pre code:before,
 .mde-preview pre code:after {
   content: normal;
 }
-.mde-preview kbd {
-  display: inline-block;
-  padding: 3px 5px;
-  font-size: 11px;
-  line-height: 10px;
-  color: #555;
-  vertical-align: middle;
-  background-color: #fcfcfc;
-  border: solid 1px #ccc;
-  border-bottom-color: #bbb;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #bbb;
-}
 .mde-preview .cm-header {
-  color: blue;
+  color: #956bd1;
+}
+.mde-preview .cm-strong {
+  color: #eea75b;
 }
 .mde-preview .cm-quote {
-  color: #090;
+  color: #5555ff;
   font-style: italic;
 }
 .mde-preview .cm-negative {
-  color: #d44;
+  color: #ee4444;
 }
 .mde-preview .cm-positive {
-  color: #292;
+  color: #1cc647;
 }
 .mde-preview .cm-header,
 .mde-preview .cm-strong {
   font-weight: bold;
 }
 .mde-preview .cm-em {
+  color: #5555ff;
   font-style: italic;
 }
 .mde-preview .cm-link {
@@ -441,80 +446,80 @@
   text-decoration: line-through;
 }
 .mde-preview .cm-keyword {
-  color: #333;
-  font-weight: bold;
+  color: #e55fac;
 }
 .mde-preview .cm-atom {
-  color: #219;
+  color: #956bd1;
 }
 .mde-preview .cm-number {
-  color: #164;
+  color: #956bd1;
 }
 .mde-preview .cm-def {
-  color: #00f;
+  color: #282a36;
 }
 .mde-preview .cm-property {
-  color: #00c;
+  color: #1cc647;
 }
 .mde-preview .cm-operator {
-  color: #708;
+  color: #e55fac;
+}
+.mde-preview .cm-variable,
+.mde-preview .cm-punctuation {
+  color: #282a36;
 }
 .mde-preview .cm-variable-2 {
-  color: #05a;
+  color: #6dcbdf;
 }
 .mde-preview .cm-variable-3,
-.mde-preview .cm-s-default .cm-type {
-  color: #085;
+.mde-preview .cm-s-alucard .cm-type {
+  color: #eea75b;
 }
 .mde-preview .cm-comment {
-  color: #a50;
-  font-style: italic;
+  color: #9eaee0;
 }
-.mde-preview .cm-string {
-  color: #a11;
-}
-.mde-preview .cm-string-2 {
-  color: #f50;
+.mde-preview .cm-string,
+.mde-preview .cm-s-alucard .cm-string-2 {
+  color: #5555ff;
 }
 .mde-preview .cm-meta {
-  color: #555;
+  color: #282a36;
 }
 .mde-preview .cm-qualifier {
-  color: #555;
+  color: #1cc647;
 }
 .mde-preview .cm-builtin {
-  color: #30a;
+  color: #6dcbdf;
 }
 .mde-preview .cm-bracket {
-  color: #997;
+  color: #282a36;
 }
 .mde-preview .cm-tag {
-  color: #170;
+  color: #e55fac;
 }
 .mde-preview .cm-attribute {
-  color: #00c;
+  color: #1cc647;
 }
 .mde-preview .cm-hr {
-  color: #999;
+  color: #9eaee0;
 }
 .mde-preview .cm-link {
-  color: #00c;
+  color: #6dcbdf;
 }
 .mde-preview .cm-error {
-  color: #f00;
+  color: #ee4444;
 }
 .mde-preview kbd {
   display: inline-block;
   padding: 3px 5px;
   font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
   line-height: 10px;
-  color: #555;
+  color: #282a36;
   vertical-align: middle;
-  background-color: #fcfcfc;
-  border: solid 1px #ccc;
-  border-bottom-color: #bbb;
+  background-color: #ffffff;
+  border: solid 1px #e4e7fa;
+  border-bottom-color: #9eaee0;
   border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #bbb;
+  box-shadow: inset 0 -1px 0 #9eaee0;
 }
 .mde-preview .task-list-item {
   list-style-type: none;
@@ -529,7 +534,7 @@
 .mde-preview :checked + .radio-label {
   z-index: 1;
   position: relative;
-  border-color: #4078c0;
+  border-color: #9eaee0;
 }
 @media print {
   .mde-preview table {
