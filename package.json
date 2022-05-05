@@ -9,8 +9,7 @@
   "repository": "https://github.com/johanvx/inkdrop-alucard-preview",
   "license": "MIT",
   "styleSheets": [
-    "alucard-markdown.css",
-    "alucard-markdown-dark.css"
+    "alucard-markdown.css"
   ],
   "engines": {
     "inkdrop": "^5.x"
